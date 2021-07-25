@@ -16,4 +16,5 @@ Route::group([
 ], function () { // custom admin routes
 
     Route::crud('input', 'InputCrudController');
+    Route::get('charts/weekly-users', 'Charts\WeeklyUsersChartController@response')->name('charts.weekly-users.index');
 }); // this should be the absolute last line of this file
